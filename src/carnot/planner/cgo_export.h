@@ -27,7 +27,7 @@ typedef void* PlannerPtr;
 
 /**
  * @brief Makes a new planner object.
- * @return PlannePtr - pointer to the planner object.
+ * @return PlannerPtr - pointer to the planner object.
  */
 PlannerPtr PlannerNew(const char* udf_info_str_data, int udf_info_str_len);
 
@@ -36,9 +36,9 @@ PlannerPtr PlannerNew(const char* udf_info_str_data, int udf_info_str_len);
  * compile the query into a serialized protobuf.
  *
  * @param planner                 Pointer to the Planner.
- * @param planner_state_str_c     The planner state proto, seralized as a string.
+ * @param planner_state_str_c     The planner state proto, serialized as a string.
  * @param planner_state_str_len   Length of the planner state proto serialized string.
- * @param query_request_str_c     The query request proto to plan, seralized as a string.
+ * @param query_request_str_c     The query request proto to plan, serialized as a string.
  * @param query_request_str_len   The length of the query request serialized string.
  * @return char*                  The distributed plan proto, serialized as a string.
  */
@@ -46,7 +46,7 @@ char* PlannerPlan(PlannerPtr planner_ptr, const char* query, int query_len, int*
 
 /**
  * @brief Compiles mutations into their executable form. Takes in a serialized
- * CompileMutationsRequest and returns a serialiaed CompileMutationsResponse.
+ * CompileMutationsRequest and returns a serialized CompileMutationsResponse.
  *
  * @param planner Pointer to the Planner object
  * @param planner_state_str_c     The serialized distributedpb.LogicalPlannerState.

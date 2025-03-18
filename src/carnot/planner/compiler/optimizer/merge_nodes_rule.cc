@@ -80,7 +80,7 @@ bool CompareColumns(const std::vector<ColumnIR*>& a, const std::vector<ColumnIR*
  * @brief Returns true if ColExpressionVectors are mergable.
  *
  * Two ColExpressionVectors are mergeable if for each ColExpressions with the same name have the
- * same expression. This also means if the size of the intesection of column names is 0, then Maps
+ * same expression. This also means if the size of the intersection of column names is 0, then Maps
  * can merge.
  *
  * @param exprs_a

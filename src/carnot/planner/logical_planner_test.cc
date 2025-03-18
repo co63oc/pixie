@@ -167,7 +167,7 @@ quantiles_agg['latency_p90'] = px.pluck(quantiles_agg['latency_quantiles'], 'p90
 quantiles_agg['latency_p99'] = px.pluck(quantiles_agg['latency_quantiles'], 'p99')
 quantiles_table = quantiles_agg[['service', 'latency_p50', 'latency_p90', 'latency_p99', 'errors', 'throughput_total']]
 
-# The Range aggregate to calcualte the requests per second.
+# The Range aggregate to calculate the requests per second.
 requests_agg = t1.groupby(['service', 'range_group']).agg(
   requests_per_window=('resp_status', px.count),
 )

@@ -662,7 +662,7 @@ StatusOr<QLObjectPtr> ASTVisitorImpl::FuncDefHandler(
 
 Status ASTVisitorImpl::ProcessFunctionDefNode(const pypa::AstFunctionDefPtr& node) {
   // Create the func object.
-  // Use the new function defintion body as the function object.
+  // Use the new function definition body as the function object.
   // Every time the function is evaluated we should evaluate the body with the values for the
   // args passed into the scope.
   // Parse the args to create the necessary

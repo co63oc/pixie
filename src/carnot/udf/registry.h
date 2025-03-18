@@ -169,7 +169,7 @@ class Registry {
   }
 
   /**
-   * UDTF specfic Register function that creates a UDTF factory.
+   * UDTF specific Register function that creates a UDTF factory.
    * @tparam TUDTF the UDTF
    * @tparam TFactory the UDTF factory
    * @param name name of the udtf

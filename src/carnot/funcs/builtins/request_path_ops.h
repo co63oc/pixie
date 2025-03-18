@@ -59,7 +59,7 @@ class RequestPath {
   /**
    * Updates i-th path component with new value.
    * @param i the index of the path component to update.
-   * @param new_val The new value of the path componet.
+   * @param new_val The new value of the path component.
    */
   void UpdatePathComponent(size_t i, const std::string& new_val) {
     DCHECK_LT(i, path_components_.size());
@@ -76,7 +76,7 @@ class RequestPath {
 
   /**
    * Returns whether this request path matches a template request path.
-   * @param templ Tempalte request path to match against.
+   * @param templ Template request path to match against.
    * @return whether they match. If templ as any kAnyToken's as path components, then those path
    * components aren't considered. eg. /a/b/c matches the template /a/<*>/c but /a/<*>/c doesn't
    * match the template /a/b/c.

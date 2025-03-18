@@ -30,7 +30,7 @@ namespace compiler {
  * @brief This rule removes groupbys after the aggregate merging step.
  *
  * We can't remove the groupby in the aggregate merging step because it's possible
- * that mutliple aggregates branch off of a single groupby. We need to do that here.
+ * that multiple aggregates branch off of a single groupby. We need to do that here.
  *
  * This rule succeeds if it finds that GroupBy has no more children. If it does, this
  * rule will throw an error.

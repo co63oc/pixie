@@ -497,7 +497,7 @@ struct UDTFChecker {
  *   class OutputsConstStringUDTF: public <OutputConstStringUDTF> {
  *    public:
  *     // Specify where this UDTF is executed.
- *     static constexpr auto Exector() {
+ *     static constexpr auto Executor() {
  *       return udfspb::UDTFSourceExecutor::UDTF_ALL_AGENTS;
  *     }
  *

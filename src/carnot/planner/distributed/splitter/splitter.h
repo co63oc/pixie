@@ -299,7 +299,7 @@ class Splitter : public NotCopyable {
    * If it's the case that any of the children lack a partial implementation, that means the parent
    * operator has to send over all of it's data. For the children that do have a partial
    * implementation that means we now not only send over the original full data but we also send
-   * over the partial results so our network usage has acutally increased rather than decreased.
+   * over the partial results so our network usage has actually increased rather than decreased.
    *
    * Instead we opt to just perform the original operation after the GRPCBridge, assuming that the
    * operation is much cheaper than the network costs.

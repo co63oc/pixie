@@ -49,7 +49,7 @@ class Planner {
 
 /**
  * @brief The planner takes in a logical plan and knowledge about the Machines available for
- * exeuction to create a plan that is close to what is actually executed on the nodes.
+ * execution to create a plan that is close to what is actually executed on the nodes.
  *
  * The distributed plan maps identifiers of nodes to the Plan that corresponds to that node.
  *

@@ -186,7 +186,7 @@ def main():
             task_list += generateTaskSegments(target,
                                               parsed.all_output, parsed.v)
 
-    # Task to regnerate the file.
+    # Task to regenerate the file.
     task_list += [{
         'label': 'generate tasks/launch json files (lldb)',
         'type': 'shell',

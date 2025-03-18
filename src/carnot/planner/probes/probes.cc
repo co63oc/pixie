@@ -242,7 +242,7 @@ Status TracepointDeployment::AddTracepoint(TracepointIR* tracepoint_ir,
   const auto& old_schema = output_map_[output->name()]->DebugString();
   if (old_schema != new_schema) {
     return error::InvalidArgument(
-        "New output schema '$0' for '$2' doesnt match previously defined schema '$1'", new_schema,
+        "New output schema '$0' for '$2' doesn't match previously defined schema '$1'", new_schema,
         old_schema, output->name());
   }
   return Status::OK();

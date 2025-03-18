@@ -51,7 +51,7 @@ class PixieModule : public QLObject {
   Outputs the data from the engine.
 
   Writes the data to the output stream. Disabled if executing using Vis functions.
-  If you want to still see data when using vis fucntions, use `px.debug`.
+  If you want to still see data when using vis functions, use `px.debug`.
 
   Examples:
     px.display(df, 'http_data')

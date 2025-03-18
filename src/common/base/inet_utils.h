@@ -44,7 +44,7 @@ namespace px {
 //-----------------------------------------------------------------------------
 
 /**
- * Checks if the IPv6 addr is a mappped IPv4 address (e.g. ::ffff:x.x.x.x).
+ * Checks if the IPv6 addr is a mapped IPv4 address (e.g. ::ffff:x.x.x.x).
  */
 inline bool IsIPv4Mapped(const struct in6_addr& a) {
   return ((a.s6_addr16[0]) == 0) && ((a.s6_addr16[1]) == 0) && ((a.s6_addr16[2]) == 0) &&

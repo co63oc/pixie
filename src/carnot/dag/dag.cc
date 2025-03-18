@@ -215,7 +215,7 @@ void DAG::ReplaceChildEdge(int64_t parent_node, int64_t old_child_node, int64_t 
   CHECK(HasNode(new_child_node)) << "new_child_node does not exist";
   auto& forward_edges = forward_edges_by_node_[parent_node];
 
-  // Repalce the old_child_node with the new_child_node in the forward edge.
+  // Replace the old_child_node with the new_child_node in the forward edge.
   std::replace(forward_edges.begin(), forward_edges.end(), old_child_node, new_child_node);
 
   // Update the edge map. Must remake the hash set because we cannot simply remove the old edge and
@@ -241,7 +241,7 @@ void DAG::ReplaceParentEdge(int64_t child_node, int64_t old_parent_node, int64_t
   CHECK(HasNode(new_parent_node)) << "new_parent_node does not exist";
   auto& reverse_edges = reverse_edges_by_node_[child_node];
 
-  // Repalce the old_from_node with the new_from_node.
+  // Replace the old_from_node with the new_from_node.
   std::replace(reverse_edges.begin(), reverse_edges.end(), old_parent_node, new_parent_node);
 
   // Remove the old forward edge (old_from_node, child_node)

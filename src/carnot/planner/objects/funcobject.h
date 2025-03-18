@@ -40,7 +40,7 @@ namespace planner {
 namespace compiler {
 
 /**
- * @brief VisSpec contains the information about the visualizaton.
+ * @brief VisSpec contains the information about the visualization.
  */
 struct VisSpec {
   std::string vega_spec;

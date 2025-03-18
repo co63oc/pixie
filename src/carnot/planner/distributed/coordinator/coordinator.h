@@ -80,7 +80,7 @@ class Coordinator : public NotCopyable {
 
 /**
  * @brief This coordinator creates a plan layout with 1 remote processor getting data
- * from N sources. If the passed in plan has special conditions, it will split differntly.
+ * from N sources. If the passed in plan has special conditions, it will split differently.
  *
  */
 class CoordinatorImpl : public Coordinator {
@@ -96,7 +96,7 @@ class CoordinatorImpl : public Coordinator {
 
   // Nodes that have a source of data.
   std::vector<CarnotInfo> data_store_nodes_;
-  // Nodes that remotely prcoess data.
+  // Nodes that remotely process data.
   std::vector<CarnotInfo> remote_processor_nodes_;
   // The distributed state object.
   const distributedpb::DistributedState* distributed_state_ = nullptr;

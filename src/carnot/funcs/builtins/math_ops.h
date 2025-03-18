@@ -444,7 +444,7 @@ class GreaterThanUDF : public udf::ScalarUDF {
     return udf::ScalarUDFDocBuilder(
                "Compare whether the first argument is greater than the second argument.")
         .Details("This function is implicitly invoked by the > operator.")
-        .Example(R"doc(# Implict call.
+        .Example(R"doc(# Implicit call.
         | df.gt = df.a > df.b
         | Explicit call.
         | df.gt = px.greaterThan(df.a, df.b))doc")
@@ -464,7 +464,7 @@ class GreaterThanEqualUDF : public udf::ScalarUDF {
                "Compare whether the first argument is greater than or equal to the second "
                "argument.")
         .Details("This function is implicitly invoked by the >= operator.")
-        .Example(R"doc(# Implict call.
+        .Example(R"doc(# Implicit call.
         | df.gte = df.a >= df.b
         | Explicit call.
         | df.gte = px.greaterThanEqual(df.a, df.b))doc")
@@ -480,7 +480,7 @@ class LessThanUDF : public udf::ScalarUDF {
   BoolValue Exec(FunctionContext*, TArg1 b1, TArg2 b2) { return b1 < b2; }
   static udf::ScalarUDFDocBuilder Doc() {
     return udf::ScalarUDFDocBuilder("Returns which value is less than the other.")
-        .Example(R"doc(# Implict call.
+        .Example(R"doc(# Implicit call.
         | df.lt = df.a < df.b
         | Explicit call.
         | df.lt = px.lessThan(df.a, df.b))doc")

@@ -67,7 +67,7 @@ class OperatorIR : public IRNode {
    *
    * @param old_parent: operator's parent that will be replaced.
    * @param new_parent: the new operator to replace old_parent with.
-   * @return Status: Error if old_parent not an actualy parent.
+   * @return Status: Error if old_parent not an actually parent.
    */
   Status ReplaceParent(OperatorIR* old_parent, OperatorIR* new_parent);
 

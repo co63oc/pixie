@@ -152,7 +152,7 @@ StatusOr<KernelVersion> GetLinuxVersionFromNoteSection() {
       std::string_view note_data(reinterpret_cast<const char*>(vdso + sec_hdr->sh_offset),
                                  sec_hdr->sh_size);
 
-      // Now prcess the .note data as {name, description} pairs.
+      // Now process the .note data as {name, description} pairs.
       // We search for a note that has name "Linux".
       while (!note_data.empty()) {
         auto notes_hdr = reinterpret_cast<const ElfW(Nhdr)*>(note_data.data());

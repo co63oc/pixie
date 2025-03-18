@@ -130,7 +130,7 @@ class AggNode : public ProcessingNode {
   // 2. The reverse mapping from stored_cols to plan cols. This can be a regular vector,
   // since the stored column indices are contiguous.
   std::vector<int64_t> stored_cols_to_plan_idx_;
-  // 3. The data type of the stored colums, by the index they are stored at.
+  // 3. The data type of the stored columns, by the index they are stored at.
   std::vector<types::DataType> stored_cols_data_types_;
 
   ObjectPool group_args_pool_{"group_args_pool"};

@@ -129,7 +129,7 @@ message ConfigUpdate {
   string agent_pod_name = 3;
 }
 
-// The definition of a mutation to perfom on Vizier. Mutations include operations
+// The definition of a mutation to perform on Vizier. Mutations include operations
 // that add and delete tables to the database.
 message CompileMutation {
   oneof mutation {

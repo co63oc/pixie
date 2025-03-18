@@ -44,7 +44,7 @@ class MetadataProperty : public NotCopyable {
   /**
     @brief Returns a bool that notifies whether an expression fits the expected format for this
    * property when comparing.  This is used to make sure comparison operations (==, >, <, !=) are
-   * pre-checked during compilation, preventing unnecssary operations during execution and exposing
+   * pre-checked during compilation, preventing unnecessary operations during execution and exposing
    * query errors to the user.
    *
    * For example, we expect values compared to POD_NAMES to be Strings of the format

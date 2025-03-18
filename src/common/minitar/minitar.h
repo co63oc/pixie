@@ -43,7 +43,7 @@ class Minitar {
    * @param dest_dir Directory in which to extract the tarball.
    * @param flags Controls the attributes of the files. Some possible values include:
    * ARCHIVE_EXTRACT_TIME, ARCHIVE_EXTRACT_PERM, ARCHIVE_EXTRACT_ACL, ARCHIVE_EXTRACT_FFLAGS.
-   * Multiple flags can be set through the or oeprator.
+   * Multiple flags can be set through the or operator.
    * See libarchive for flag defintitions and other possible flags.
    * @return error if the tarball could not be extracted.
    */

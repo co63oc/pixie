@@ -87,7 +87,7 @@ message ExampleDoc {
 
 // Description that contains all the info of an object.
 message DocBody {
-  // The name of the documented obejct.
+  // The name of the documented object.
   string name = 1;
   // The short, single line description.
   string brief = 2;

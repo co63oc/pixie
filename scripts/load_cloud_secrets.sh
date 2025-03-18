@@ -29,7 +29,7 @@ credentials_path=${workspace}/private/credentials/k8s/${secret_type}
 monitoring_path=${workspace}/private/credentials/k8s/monitoring/${secret_type}
 
 if [ ! -d "${credentials_path}" ]; then
-  echo "Credentials path \"${credentials_path}\" does not exist. Did you slect the right secret type?"
+  echo "Credentials path \"${credentials_path}\" does not exist. Did you select the right secret type?"
   exit 1
 fi
 

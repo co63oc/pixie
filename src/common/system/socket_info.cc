@@ -132,7 +132,7 @@ Status ProcessDiagMsg(const struct inet_diag_msg& diag_msg, unsigned int len,
     // Between the client trying to establish a connection and the server calling accept(),
     // the connection appears as ESTABLISHED, but with an inode of 0.
 
-    // Ingore it, since an inode of 0 is not useful.
+    // Ignore it, since an inode of 0 is not useful.
     return Status::OK();
   }
 

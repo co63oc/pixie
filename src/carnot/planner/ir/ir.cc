@@ -389,7 +389,7 @@ Status PropagateTypeChangesFromNode(IR* graph, IRNode* node, CompilerState* comp
   }
 
   // All dependencies (ops and exprs) of the nodes in `clear_all_deps_nodes` have their types
-  // cleared, and all of the depenedent Operator's are added to `ops_to_resolve`.
+  // cleared, and all of the dependent Operator's are added to `ops_to_resolve`.
   absl::flat_hash_set<int64_t> ops_to_resolve;
   while (!clear_all_deps_nodes.empty()) {
     auto curr_node = clear_all_deps_nodes.front();

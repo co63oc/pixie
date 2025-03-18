@@ -231,7 +231,7 @@ class TraceModule : public QLObject {
   Decorates a tracepoint definition.
 
   Specifies the decorated function as a tracepoint on the `trace_fn`
-  name. Automatically figures out the language based on the functon
+  name. Automatically figures out the language based on the function
   specified.
 
   :topic: tracepoint_decorator

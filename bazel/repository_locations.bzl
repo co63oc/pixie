@@ -97,7 +97,7 @@ REPOSITORY_LOCATIONS = dict(
         sha256 = "95dc9dd17aca4e12e2cb18087a5851001f997682f5f0d0c441a5be3b86f285bd",
         strip_prefix = "glog-bc1fada1cf63ad12aee26847ab9ed4c62cffdcf9",
         # We cannot use the last released version due to https://github.com/google/glog/pull/706
-        # Once there is a realease that includes that fix, we can switch to a released version.
+        # Once there is a release that includes that fix, we can switch to a released version.
         urls = ["https://github.com/google/glog/archive/bc1fada1cf63ad12aee26847ab9ed4c62cffdcf9.tar.gz"],
     ),
     com_github_gperftools_gperftools = dict(

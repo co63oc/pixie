@@ -91,7 +91,7 @@ class Dataframe : public QLObject {
     # Absolute time specification.
     df = px.DataFrame('http_events', start_time='2020-07-13 18:02:5.00 -0700')
   Examples:
-    # Absolute time sepecification (nanoseconds). Note this format only works for PxL scripts;
+    # Absolute time specification (nanoseconds). Note this format only works for PxL scripts;
     # The Live UI's `start_time` argument does not support this format.
     df = px.DataFrame('http_events', start_time=1646157769000000000)
 

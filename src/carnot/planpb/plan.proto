@@ -429,7 +429,7 @@ message OTelMetricSummary {
   // max value (p100) would be quantile 1.0
   // min value (p0) would be quantile 0.0
   message ValueAtQuantile {
-    // The quantile of the distirbution, must be [0.0, 1.0].
+    // The quantile of the distribution, must be [0.0, 1.0].
     double quantile = 1;
     // The column containing quantile info. The value column must be a FLOAT64
     // and values may not be negative.
@@ -444,7 +444,7 @@ message OTelAttribute {
   message Column {
     // The type of the attribute column.
     px.types.DataType column_type = 1;
-    // The index of the atribute column.
+    // The index of the attribute column.
     int64 column_index = 2;
     // Whether the column is optionally JSON encoded.
     // That means the column might be an element not encoded as json
